@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+@font-face {
+    font-family: workSans;
+    src: url(../assets/fonts/static/WorkSans-Bold.ttf),
+    url(../assets/fonts/static/WorkSans-Regular.ttf),
+    url(../assets/fonts/static/WorkSans-SemiBold.ttf),
+}
+:root{
+--White: hsl(0, 100%, 100%);
+--Purple-100: hsl(275, 100%, 97%);
+--Purple-600: hsl(292, 16%, 49%);
+--Purple-950: hsl(292, 42%, 14%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Purple-100)
+}
+.img img{
+    margin: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.img{
+    position: relative;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 4rem;
+    background-color: var(--White);
+    font-family: workSans;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .8rem;
+    
+}
+.container .title {
+    display: flex;
+}
+.container .title  h1{
+    margin: 0 1rem;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.container .mid{
+
+    margin: 1rem 0;
+}
+.container .mid div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.8rem;
+    font-family: Roboto;
+    color: var(--Purple-950);
+    
+}
+.container .end{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+hr{
+    width: 100%;
+    background: #eee;
+}
+
+.container .end button {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
